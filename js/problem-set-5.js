@@ -237,7 +237,15 @@ function hurricane() {
   ///////////////// DO NOT MODIFY
   let windspeed; // DO NOT MODIFY
   ///////////////// DO NOT MODIFY
+windspeed = prompt("Enter the windspeed");
+windspeed = parseInt(windspeed);
 
+if (windspeed < 0)
+  windspeed = prompt("Enter the windspeed");
+  windspeed = parseInt(windspeed);
+if (windspeed >= 39 && windspeed <= 73);
+  let div5=document.getElementById("output");
+  div5.innerHTML = "Tropical Storm";
   ///////////////////////////////// DO NOT MODIFY
   check('hurricane', windspeed); // DO NOT MODIFY
   ///////////////////////////////// DO NOT MODIFY
