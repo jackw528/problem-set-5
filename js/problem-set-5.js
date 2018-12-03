@@ -240,12 +240,31 @@ function hurricane() {
 windspeed = prompt("Enter the windspeed");
 windspeed = parseInt(windspeed);
 
-if (windspeed < 0)
+if (windspeed < 0){
   windspeed = prompt("Enter the windspeed");
-  windspeed = parseInt(windspeed);
-if (windspeed >= 39 && windspeed <= 73);
-  let div5=document.getElementById("output");
-  div5.innerHTML = "Tropical Storm";
+  windspeed = parInt(windspeed);
+}else if (windspeed >= 0 && windspeed <=38) {
+  let calm=document.getElementById("hurricane-output");
+  calm.innerHTML = "The skies are calm...";
+}else if (windspeed >= 39 && windspeed <= 73) {
+  let tropic=document.getElementById("hurricane-output");
+  tropic.innerHTML = "Tropical Storm.";
+}else if (windspeed >= 74 && windspeed <= 95) {
+  let one=document.getElementById("hurricane-output");
+  one.innerHTML = "Category 1 Hurricane.";
+}else if (windspeed >= 96 && windspeed <= 110) {
+  let two=document.getElementById("hurricane-output");
+  two.innerHTML = "Category 2 Hurricane.";
+}else if (windspeed >= 111 && windspeed <= 129) {
+  let three=document.getElementById("hurricane-output");
+  three.innerHTML = "Category 3 Hurricane.";
+}else if (windspeed >= 130 && windspeed <= 156) {
+  let four=document.getElementById("hurricane-output");
+  four.innerHTML = "Category 4 Hurricane.";
+}else if(windspeed >= 157) {
+  let five=document.getElementById("hurricane-output");
+  five.innerHTML = "Category 5 Hurricane.";
+}
   ///////////////////////////////// DO NOT MODIFY
   check('hurricane', windspeed); // DO NOT MODIFY
   ///////////////////////////////// DO NOT MODIFY
